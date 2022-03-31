@@ -1,0 +1,12 @@
+{
+  "cruise_number": "400",
+  "cruise_date_start": "YYYY-MM-DD",
+  "cruise_date_end": "YYYY-MM-DD",
+  "chief_scientist": "Chief Scientist Name",
+  "creator":"Your Name" ,
+  "created_on": "{% now 'local' %}"
+
+}
+
+
+
