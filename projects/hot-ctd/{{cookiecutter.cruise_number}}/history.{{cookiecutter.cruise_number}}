@@ -1,7 +1,7 @@
 Cruise Number: HOT-{{cookiecutter.cruise_number}}
 
 Cruise Dates: Start: {{cookiecutter.cruise_date_start}}
-                End: {{cookiecutter.cruise_date_start}}
+                End: {{cookiecutter.cruise_date_end}}
 
 Chief Scientist: {{cookiecutter.chief_scientist}}
 --------------------------------------------------------------------------------
