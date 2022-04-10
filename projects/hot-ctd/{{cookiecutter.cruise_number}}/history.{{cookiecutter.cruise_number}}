@@ -26,7 +26,7 @@ watersum	sum
 
 	Name	Date	Comments
 
-1) {{cookiecutter.creator}} - {{cookiecutter.created_on}} : Started CTD data processing
+1) {{cookiecutter.processor_first_name}} - {{cookiecutter.created_on}} : Started CTD data processing
 --------------------------------------------------------------------------------
 
 CTD Calibration
