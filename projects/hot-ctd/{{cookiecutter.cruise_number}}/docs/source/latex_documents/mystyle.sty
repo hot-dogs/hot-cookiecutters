@@ -1,0 +1,100 @@
+%============= TOC, FIGURES, & TABLES===================================
+\setcounter{secnumdepth}{3}
+
+%=======================================================================
+% Table of content
+%   2 = subsection,
+%   3 = subsubsection
+%=======================================================================
+\setcounter{tocdepth}{3}
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+
+% Include Images
+\usepackage{graphicx}
+
+%=======================================================================
+% Reduce spaces for Table of contents, figures and tables
+% It is used "\addtocontents{toc}{\vskip -1.2cm}" etc. in the document
+%=======================================================================
+\addtocontents{toc}{\vskip -2.5cm}
+
+\usepackage[notlot,nottoc,notlof]{}
+\usepackage{color}
+\usepackage{transparent}
+\usepackage{eso-pic}
+\usepackage{lipsum}
+
+\usepackage{footnotebackref} %%link at the footnote to go to the place of footnote in the text
+
+%=======================================================================
+% spacing between line
+%   \singlespacing
+%   \onehalfspacing
+%   \doublespacing
+%=======================================================================
+\usepackage{setspace}
+\singlespacing
+
+%=======================================================================
+% date and time
+%=======================================================================
+\usepackage{datetime}
+\newdateformat{MonthYearFormat}{%
+    \monthname[\THEMONTH], \THEYEAR}
+
+%=======================================================================
+% RO, LE will not work for 'oneside' layout.
+% Change oneside to twoside in document class
+%=======================================================================
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+%=======================================================================
+% Alternating Header for oneside
+%=======================================================================
+\fancyhead[L]{\ifthenelse{\isodd{\value{page}}}{ \small \nouppercase{\leftmark} }{}}
+\fancyhead[R]{\ifthenelse{\isodd{\value{page}}}{}{ \small \nouppercase{\rightmark} }}
+
+%=======================================================================
+% Alternating Header for two side
+%\fancyhead[RO]{\small \nouppercase{\rightmark}}
+%\fancyhead[LE]{\small \nouppercase{\leftmark}}
+%=======================================================================
+
+%=======================================================================
+% Page number
+%=======================================================================
+\fancyfoot[CO, CE]{\thepage}
+
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+\RequirePackage{tocbibind} %%% comment this to remove page number for following
+\addto\captionsenglish{\renewcommand{\contentsname}{Table of contents}}
+\addto\captionsenglish{\renewcommand{\listfigurename}{List of figures}}
+\addto\captionsenglish{\renewcommand{\listtablename}{List of tables}}
+\addto\captionsenglish{\renewcommand{\listtablename}{List of tables}} %%% Heading for TOC
+
+%=======================================================================
+% Reduce spacing for itemize
+%=======================================================================
+\usepackage{enumitem}
+\setlist{nosep}
+
+%=======================================================================
+% Hyper links colors
+%=======================================================================
+\usepackage{hyperref} % Hyper links
+ \hypersetup{colorlinks=true,
+ 		     linkcolor=blue,
+		     filecolor=magenta,
+    		 urlcolor=cyan,
+		     citecolor=blue,
+		     pdfnewwindow=true}
+
+%======================================================================
+% Add Footnote cross reference
+%======================================================================
+\usepackage{footmisc}
