@@ -1,0 +1,1 @@
+# Description of WHOTS-{{cookiecutter.whots_deployment_number}} Mooring
