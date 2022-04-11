@@ -1,2 +1,0 @@
-# Description of the WHOTS-{{cookiecutter.whots_previous_deployment}} Mooring Cruises
-## WHOTS-{{cookiecutter.whots_previous_deployment}} Cruise: WHOTS-{{cookiecutter.whots_previous_deployment}} Mooring Deployment
