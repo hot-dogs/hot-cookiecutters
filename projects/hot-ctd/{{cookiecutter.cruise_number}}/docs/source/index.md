@@ -1,4 +1,4 @@
-# WHOTS-{{cookiecutter.whots_deployment_number}}  
+# HOT-{{cookiecutter.cruise_number}}  
 
 ```{toctree} 
 :maxdepth: 3
