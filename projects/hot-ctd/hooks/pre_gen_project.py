@@ -2,7 +2,7 @@ import sys
 
 
 def validate():
-    creator = '{{cookiecutter.creator}}'
+    creator = '{{cookiecutter.first_na,e}}'
 
     if not creator.strip():
         print("ERROR FAILED(1): You must specify a creator to use this template")

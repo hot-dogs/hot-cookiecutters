@@ -64,6 +64,18 @@
 %=======================================================================
 
 %=======================================================================
+% for oneside: change footer at right side.
+% If you want to use Left and right then use same as header defined above.
+%=======================================================================
+
+\fancyfoot[R]{\ifthenelse{\isodd{\value{page}}}{{\tiny WHOTS-16} }{\href{https://whots-annual-report.readthedocs.io/projects/whots16-data-report/en/latest/}{\tiny  WHOTS-16}}}
+
+%=======================================================================
+% Alternating Footer for two side
+%\fancyfoot[RO, RE]{\scriptsize Meher Krishna Patel (mekrip@gmail.com)}
+%=======================================================================
+
+%=======================================================================
 % Page number
 %=======================================================================
 \fancyfoot[CO, CE]{\thepage}
@@ -82,6 +94,15 @@
 %=======================================================================
 \usepackage{enumitem}
 \setlist{nosep}
+
+%=======================================================================
+% Quote Styles at the top of chapter
+%=======================================================================
+\usepackage{epigraph}
+\setlength{\epigraphwidth}{0.8\columnwidth}
+\newcommand{\chapterquote}[2]{\epigraphhead[60]{\epigraph{\textit{#1}}{\textbf {\textit{--#2}}}}}
+%%%%%%%%%%% Quote for all places except Chapter
+\newcommand{\sectionquote}[2]{{\quote{\textit{``#1''}}{\textbf {\textit{--#2}}}}}
 
 %=======================================================================
 % Hyper links colors
