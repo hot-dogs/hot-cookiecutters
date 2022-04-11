@@ -20,4 +20,4 @@ conda:
 python:
   version: "3"
   install:
-  - requirements: docs/environment.yaml
+  - requirements: docs/environment.yml
