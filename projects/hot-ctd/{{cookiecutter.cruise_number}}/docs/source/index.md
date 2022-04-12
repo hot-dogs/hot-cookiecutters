@@ -5,6 +5,6 @@
 :numbered:
 :caption: Table of Contents
 
-notebooks/1_section.ipynb
+notebooks/1_section
 
 ```
