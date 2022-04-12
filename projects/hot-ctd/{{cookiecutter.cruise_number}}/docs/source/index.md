@@ -5,9 +5,6 @@
 :numbered:
 :caption: Table of Contents
 
-
-```{include} ../first_test
-```
+notebooks/1_section.ipynb
 
 ```
-%.. include:: ../notebooks/test.
