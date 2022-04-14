@@ -5,8 +5,8 @@
   "chief_scientist": "Chief Scientist Name",
   "processor_first_name":"Your First Name" ,
   "processor_last_name": "Your Last Name",
-  "created_on": "{% now 'local' %}"
-
+  "created_on": "{% now 'local' %}",
+  "_extensions": ["jinja2_time.TimeExtension"]
 }
 
 
