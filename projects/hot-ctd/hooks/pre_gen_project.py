@@ -1,4 +1,10 @@
 import sys
+from datetime import datetime
+
+
+def convert_date(cruise_date):
+
+    return datetime.fromisoformat(cruise_date).strftime('%B %d, %Y')
 
 
 def validate():
@@ -16,4 +22,5 @@ def validate():
 
 
 if __name__ == '__main__':
+    new_cruise_date_start = convert_date('{{cookiecutter.cruise_date_start}}')
     sys.exit(validate())
