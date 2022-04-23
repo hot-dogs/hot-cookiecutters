@@ -7,9 +7,4 @@
   "processor_last_name": "Your Last Name",
   "created_on": "{% now 'local' %}",
   "_extensions": ["jinja2_time.TimeExtension"]
-
-
 }
-
-
-
