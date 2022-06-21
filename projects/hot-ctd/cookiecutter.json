@@ -1,10 +1,9 @@
 {
   "cruise_number": "400",
-  "cruise_date_start": "YYYY-MM-DD",
-  "cruise_date_end": "YYYY-MM-DD",
+  "cruise_date_start": "Month dd, YYYY",
+  "cruise_date_end": "Month dd, YYYY",
   "chief_scientist": "Chief Scientist Name",
   "processor_first_name":"Your First Name" ,
   "processor_last_name": "Your Last Name",
   "created_on": "{% now 'local' %}",
-  "_extensions": ["jinja2_time.TimeExtension"]
 }
