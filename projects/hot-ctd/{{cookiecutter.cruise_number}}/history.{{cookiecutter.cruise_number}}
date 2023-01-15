@@ -3,7 +3,7 @@ Cruise Number: HOT-{{cookiecutter.cruise_number}}
 Cruise Dates: Start: {{cookiecutter.cruise_date_start}}
                 End: {{cookiecutter.cruise_date_end}}
 
-Chief Scientist: {{cookiecutter.chief_scientist}}
+Chief Scientist: {{cookiecutter.chief_scientist_full_name}}
 --------------------------------------------------------------------------------
 
 CTD Data Processing
@@ -26,7 +26,7 @@ watersum	sum
 
 	Name	Date	Comments
 
-1) {{cookiecutter.processor_first_name}} - {{cookiecutter.created_on}} : Started CTD data processing
+1) {{cookiecutter.processor_first_name}} {{cookiecutter.processor_last_name}} - {{cookiecutter.created_on}} : Started CTD data processing
 --------------------------------------------------------------------------------
 
 CTD Calibration

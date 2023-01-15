@@ -18,8 +18,8 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'HOT-{{cookiecutter.cruise_number}}'
-copyright = f'{datetime.now().year}, {{cookiecutter.processor_first_name}} {{cookiecutter.processor_last_name}}'
+project = 'HOT-{{cookiecutter.cruise_number}} CTD Data Processing Report'
+copyright = f'{datetime.now().year}, Hawaii Ocean Time-series (HOT)'
 author = '{{cookiecutter.processor_first_name}} {{cookiecutter.processor_last_name}}'
 
 # The full version, including alpha/beta/rc tags
@@ -27,13 +27,20 @@ release = '0.0.1'
 
 # -- General configuration ---------------------------------------------------
 extensions = [
-    "myst_parser",
+    "myst_nb",
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "sphinx_autodoc_typehints",
-    "nbsphinx",
     "sphinx.ext.intersphinx",
     "sphinx.ext.autosectionlabel",
+    "sphinx_design",
+    "sphinx_thebe",
+]
+
+# Enable some MyST extensions.
+myst_enable_extensions = [
+    "colon_fence",
+    "amsmath",
 ]
 
 intersphinx_mapping = {
@@ -45,13 +52,15 @@ myst_url_schemes = ["http", "https", ]
 # Added cross reference for headings
 myst_heading_anchors = 3
 
+# Jupyter notebook
+nb_execution_mode = "auto"
+
+thebe_config = {
+    "always_load": True,
+}
+
 # Add numbered roles
 numfig = True
-
-# Enable some MyST extensions.
-myst_enable_extensions = [
-    "colon_fence",
-]
 
 # Make sure the explicity target is unique
 autosectionlabel_prefix_document = True
@@ -59,8 +68,13 @@ autosectionlabel_maxdepth = 3
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
-source_suffix = '.md'
-#master_doc = 'index'
+source_suffix = {
+    '.ipynb': 'myst-nb',
+    '.myst': 'myst-nb',
+    '.md': 'myst-nb',
+}
+
+master_doc = 'index'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -113,11 +127,11 @@ latex_elements = {
 
     # ===================== PREAMBLE ======================================
     'preamble': r'''
-    \input{mystyle.sty}
+      \input{mystyle.sty}
     ''',
     # ============== COVER PAGE + TABLE OF CONTENTS  ======================
     'maketitle': r''' 
-    \input{maketitle.sty}
+      \input{maketitle.sty}
     ''',
 
     # Latex figure (float) alignment
@@ -136,7 +150,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-    ('index', '../../reports/hot-{{cookiecutter.cruise_number}}-data-report.tex',
+    ('index', 'hot-{{cookiecutter.cruise_number}}-ctd-data-report.tex',
      u'HOT-{{cookiecutter.cruise_number}}: CTD Data Processing Report',
      u'{{cookiecutter.processor_first_name}}{{cookiecutter.processor_last_name}} ', 'manual'),
 ]

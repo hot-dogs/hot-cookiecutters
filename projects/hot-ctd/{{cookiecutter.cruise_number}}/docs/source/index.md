@@ -1,4 +1,4 @@
-# HOT-{{cookiecutter.cruise_number}}  
+# HOT-{{cookiecutter.cruise_number}} CTD Data Processing Report 
 
 ```{toctree} 
 :maxdepth: 3

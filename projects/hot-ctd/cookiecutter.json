@@ -2,9 +2,45 @@
   "cruise_number": "400",
   "cruise_date_start": "Month dd, YYYY",
   "cruise_date_end": "Month dd, YYYY",
-  "chief_scientist": "Chief Scientist Name",
+  "research_vessel": ["R/V Kilo-Moana (KM)"],
+  "chief_scientist_full_name": "Chief Scientist Full Name",
+
+  "total_number_of_ctd_casts": "18" ,
+  "total_number_of_ctd_casts_at_KAHE": "1",
+  "deep_cast_max_depth_at_KAHE" : "1020 (dbar)",
+
+  "total_number_of_ctd_casts_at_ALOHA": "15",
+  "first_deep_cast_performed_at_ALOHA": ["yes","no"],
+  "first_deep_cast_number": "2",
+  "first_deep_cast_max_depth" : "4801 (dbar)",
+  "first_deep_cast_altimeter_reading" : "12",
+  "second_deep_cast_performed_at_ALOHA": ["yes","no"],
+  "second_deep_cast_number": "15",
+  "second_deep_cast_max_depth" : "4803 (dbar)",
+  "second_deep_cast_altimeter_reading" : "10 ",
+
+  "yoyo_cast_performed_at_WHOTS": ["yes","no"],
+  "total_number_of_yoyo_cycles_at_WHOTS": "4",
+  "current_whots_number": "17",
+  "current_whots_station": ["Station 50", "Station 52"],
+  "wind_speed_measured_at_WHOTS" : "5-15",
+  "wind_direction_measured_at_WHOTS" : "E",
+
+  "total_number_of_ctd_casts_at_KAENA": "1",
+  "deep_cast_max_depth_at_KAENA" : "2400",
+  "deep_cast_altimeter_reading_at_KAENA" : "10",
+
+  "mixed_layer_at_ALOHA" : "50 (dbar)",
+  "oxygen_maximum_depth_at_ALOHA" : "100 (dbar)",
+  "oxygen_maximum_value_at_ALOHA" : "220 (umol/kg)",
+  "oxygen_minimum_zone_depth_at_ALOHA" : "650 (dbar)",
+  "oxygen_minimum_zone_value_at_ALOHA" : "40 (umol/kg)",
+  "salinity_minimum_depth_at_ALOHA" : "500 (dbar)",
+  "salinity_minimum_value_at_ALOHA": "34.0798 ",
+
   "processor_first_name":"Your First Name" ,
   "processor_last_name": "Your Last Name",
   "created_on": "{% now 'local' %}"
 
 }
+

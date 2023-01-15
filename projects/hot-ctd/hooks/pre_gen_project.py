@@ -1,10 +1,4 @@
 import sys
-from datetime import datetime
-
-
-def convert_date(cruise_date):
-
-    return datetime.fromisoformat(cruise_date).strftime('%B %d, %Y')
 
 
 def validate():
