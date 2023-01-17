@@ -1,0 +1,109 @@
+\pagenumbering{Roman} %%% to avoid page 1 conflict with actual page 1
+
+%================================= FIRST TITLE PAGE ===================================
+\begin{titlepage}
+    \centering
+
+    %\vspace*{2mm} %%% * is used to give space from top
+    {\scshape\Huge \textbf{University of Hawaii at Manoa} \par}
+
+    \rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+    \rule{\textwidth}{1.6pt}
+
+    \vspace{1mm}
+    \hbox{\hspace{15.2em}\includegraphics[width=7cm]{logo_HOT.png}}
+    \rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick
+    \rule{\textwidth}{0.4pt} % Thin horizontal rule
+
+    {\Huge \textbf{CTD Data Processing Report} \par}
+
+    {\Large {by}\par}
+
+    {\Large
+    Fernando Carvalho Pacheco\footnote{The University of Hawaii at Manoa\label{uhmanoa}},
+    Fernando Santiago-Mandujano\textsuperscript{\ref{uhmanoa}}
+    \par}
+
+    \vspace{0.50cm}
+    {\normalsize \Large \today\par}
+
+    \vspace{1cm}
+    {\Huge\bfseries HOT-{{cookiecutter.cruise_number}} \par}
+
+    \vspace{1.5cm}
+
+    {\normalsize \ Approved for public release; distribution unlimited. \par}
+
+    % Bottom of the page
+    \vspace{0.5cm}
+
+    {\normalsize \ The University of Hawaii at Manoa \\
+    School of Ocean and Earth Science and Technology \\
+    1000 Pope Road, Honolulu, Hawaii 96822\par}
+    \vspace{0.5cm}
+
+    {\large\ ????DOI/zenodo ????\par}
+
+    \vspace{0.25cm}
+
+\end{titlepage}
+%======================================= END =========================================
+
+%=============================== SECOND TITLE PAGE ===================================
+\begin{titlepage}
+    \centering
+
+    %\vspace*{10mm} %%% * is used to give space from top
+    {\scshape\large\bfseries\textbf{ CTD Data Processing Report }\par}
+
+    \vspace{1cm}
+    {\large {by}\par}
+    \vspace{1cm}
+
+    {\large
+    Fernando Carvalho Pacheco\textsuperscript{\ref{uhmanoa}},
+    Fernando Santiago-Mandujano\textsuperscript{\ref{uhmanoa}}
+    \par}
+
+    \vspace{1cm}
+
+    {\large \ The University of Hawaii at Manoa \\
+    School of Ocean and Earth Science and Technology \\
+    1000 Pope Road \\
+    Honolulu, Hawaii 96822\\
+    U.S.A\par}
+
+    \vspace{1cm}
+
+    {\large \today\par}
+
+    \vspace{2cm}
+    {\large\bfseries HOT-{{cookiecutter.cruise_number}} \par}
+
+    \vspace{2cm}
+
+    \centering
+    {\large Reproduction in whole or in part is permitted for any purpose of the United States Government.
+    This report should be cited as {{cookiecutter.processor_last_name}} , et al., , CTD Data Processing Report
+    , HOT-{{cookiecutter.cruise_number}}, School of Ocean Science and Technology , University of Hawaii at Manoa.
+    (\url{https://hahana.soest.hawaii.edu/hot/proc_reports/ctd/h{{cookiecutter.cruise_number}}_ctd_report.pdf}) \par}
+
+    % Bottom of the page
+    \vspace{4cm}
+
+    {\large\ Approved for public release; distribution unlimited. \par}
+
+    \vspace{1cm}
+
+\end{titlepage}
+
+%======================================= END =========================================
+
+\clearpage
+\pagenumbering{roman}
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage
+\pagenumbering{arabic}
+
